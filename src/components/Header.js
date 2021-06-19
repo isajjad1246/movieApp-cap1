@@ -3,7 +3,7 @@ function Header() {
     return (
       <div>
         <header>
-          <h3>this is my footer element</h3>
+          <h3>this is my header</h3>
 
         </header>
       </div>
