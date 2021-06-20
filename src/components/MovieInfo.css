@@ -1,5 +1,5 @@
-.movie{
-    background-color: lightgrey;
+.movie-info{
+    background-color: rgb(185, 179, 179);
     width:80%;
     margin:0 auto;
     overflow-y: auto; /*overflow-> allows for infinite scroll*/

@@ -2,14 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Movie from './components/Movie';
+import MovieInfo from './components/MovieInfo';
 
 function App() {
   return (
     <div className="App">
       <div>
         <Header name="Movie-Info"/>
-        <Movie name=""/>
+        <MovieInfo />
         <Footer name="2021"/>
       </div>
     </div>
