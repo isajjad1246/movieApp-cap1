@@ -1,8 +1,8 @@
 import React from 'react';
-import './Movie.css';
+import './Movies.css';
 import { Card } from 'react-bootstrap';
 
-function Movie(props) {
+function Movies(props) {
     return(
         <div>
             {props.movies.map(movie => {
@@ -21,4 +21,4 @@ function Movie(props) {
     )
 }
 
-export default Movie;
+export default Movies;
