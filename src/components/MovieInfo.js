@@ -32,7 +32,7 @@ function MovieInfo() {
                     value={query} 
                     type="text"
                     onChange={e => setQuery(e.target.value)}/>
-                <button className="search">Submit</button>
+                <button className="search-bar">Submit</button>
             </form>
             {showMovies ? <Movies movies={movies}></Movies> : <></>}
         </div>
