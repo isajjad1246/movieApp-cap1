@@ -1,0 +1,9 @@
+.footer{
+    background-color: lightpink;
+    min-width: height 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: size 36px;
+    color:black;
+}
