@@ -16,13 +16,17 @@ function MovieInfo() {
         const apiUrl = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${searchParam}&r=json`;
         //console.log(apiUrl);
         let response = await fetch(apiUrl);
+        console.log(apiUrl);
         response = await response.json();
+        console.log(response);
+        console.log(response.Search);
         setMovies(response.Search);
 
 
       }
       fetchAPI();
- 
+      setShowMovies(true);
+      setQuery("");
   }
 
   return (
@@ -36,6 +40,7 @@ function MovieInfo() {
         ></input>
        <button className="search-bar">Submit</button>
       </form>
+      {showMovies ? <Movie movies={movies}></Movie> : <></>}
 
     </div>
   );
