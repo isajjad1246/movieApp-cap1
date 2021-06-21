@@ -1,6 +1,6 @@
 .movie-info{
     background-color: rgb(185, 179, 179);
-    width:80%;
+    width:50%;
     margin:0 auto;
     overflow-y: auto; /*overflow-> allows for infinite scroll*/
     height:50;
@@ -14,6 +14,7 @@ form {
     justify-content: center;
     align-items: center;
 }
+
 
 #queryInput { /*adding borders and fixing the search bar*/
     box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
