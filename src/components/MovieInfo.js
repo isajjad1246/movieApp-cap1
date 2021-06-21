@@ -7,15 +7,15 @@ function MovieInfo() {
     const [query, setQuery] = useState("");
     const [showMovies, setShowMovies] = useState(false);
     
-    function handleSubmit(e) {
+    function SubmitManage(e) {
         e.preventDefault();
         async function fetchMyAPI() {
             const searchParam = encodeURIComponent(query);
-            const apiUrl = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${searchParam}&r=json`;
-            console.log(apiUrl);
+            const apiUrl = `https://www.omdbapi.com/?apikey=82852d8b&s=${searchParam}&r=json`;
+            //console.log(apiUrl);
             let response = await fetch(apiUrl);
             response = await response.json();
-            console.log(response.Search);
+            //console.log(response.Search);
             setMovies(response.Search);
         }
         fetchMyAPI();
@@ -25,14 +25,14 @@ function MovieInfo() {
 
     return(
         <div className="movieinfo">
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="queryInput">Search Movie Name:</label>
+            <form onSubmit={SubmitManage}>
+                <label htmlFor="queryInput">Search for Movie/Show:</label>
                 <input 
                     id="queryInput" 
                     value={query} 
                     type="text"
                     onChange={e => setQuery(e.target.value)}/>
-                <button className="search-bar">Submit</button>
+                <button className="search-button">Submit</button>
             </form>
             {showMovies ? <Movies movies={movies}></Movies> : <></>}
         </div>

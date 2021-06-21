@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap';
 function Movies(props) {
     return(
         <div>
-            {props.movies.map(movie => {
+            {props.movies && props.movies.map(movie => {
                 return(
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={movie.Poster} />
@@ -13,6 +13,9 @@ function Movies(props) {
                         <Card.Title>{movie.Title}</Card.Title>
                         <Card.Text>
                             {movie.Year}
+                        </Card.Text>
+                        <Card.Text>
+                            {movie.Director}
                         </Card.Text>
                     </Card.Body>
                 </Card>)
