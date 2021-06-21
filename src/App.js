@@ -8,8 +8,11 @@ function App() {
     <div className="App">
       <div>
         <Header name="Movie-Info"/>
-        <MovieInfo />
-        <Footer name="2021"/>
+        
+        <body className="Background">
+          <MovieInfo />
+        </body>
+        <Footer name="Ifrah Sajjad"/>
       </div>
     </div>
   );

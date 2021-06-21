@@ -4,7 +4,7 @@ function Footer(props) {
     return (
       <div className="footer">
         <footer>
-          <h1>{props.name}</h1>
+          <small>{props.name}</small> 
 
         </footer>
       </div>

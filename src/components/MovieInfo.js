@@ -31,6 +31,7 @@ function MovieInfo() {
                     id="queryInput" 
                     value={query} 
                     type="text"
+                    placeholder="Search for movie or show..."
                     onChange={e => setQuery(e.target.value)}/>
                 <button className="search-button">Submit</button>
             </form>

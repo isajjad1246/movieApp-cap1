@@ -2,6 +2,12 @@ import React from 'react';
 import './Movies.css';
 import { Card } from 'react-bootstrap';
 
+/*class MovieDisplay extends React.Component{
+    state={
+        movie.Data{}
+    }
+}*/
+
 function Movies(props) {
     return(
         <div>
@@ -10,13 +16,16 @@ function Movies(props) {
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={movie.Poster} />
                     <Card.Body>
-                        <Card.Title>{movie.Title}</Card.Title>
+                        <Card.Title >{movie.Title}</Card.Title>
                         <Card.Text>
-                            {movie.Year}
+                            <small>Released Date: {movie.Year}</small>
                         </Card.Text>
                         <Card.Text>
-                            {movie.Director}
+                            <h4>Rating: {movie.imdbRating} / 10</h4>
+                            <small>ImdbID: {movie.imdbID}</small>
                         </Card.Text>
+                        
+                        
                     </Card.Body>
                 </Card>)
             })}
