@@ -19,5 +19,8 @@ td, th {
     margin-right:100px;
     margin-top: auto;
     margin-bottom: 100px;
+    background-color: lightcyan;
 
+    padding-left:180px;
+    padding-right:180px;
 }

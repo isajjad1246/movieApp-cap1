@@ -10,7 +10,7 @@ import { Card } from 'react-bootstrap';
 
 function Movies(props) {
     return(
-        <div className="marg">
+        <div className="marg" >
             {props.movies && props.movies.map(movie => {
                 return(
                 <Card style={{ width: '18rem' }}>
