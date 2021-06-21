@@ -11,3 +11,13 @@ td, th {
     padding: 0.5rem;
     text-align: left;
 } 
+.marg{
+    border:20px solid black;
+    padding-inline:0px;
+    margin:70px;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top: auto;
+    margin-bottom: 100px;
+
+}

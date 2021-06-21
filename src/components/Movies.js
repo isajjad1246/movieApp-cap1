@@ -10,22 +10,22 @@ import { Card } from 'react-bootstrap';
 
 function Movies(props) {
     return(
-        <div>
+        <div className="marg">
             {props.movies && props.movies.map(movie => {
                 return(
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={movie.Poster} />
-                    <Card.Body>
-                        <Card.Title >Title: {movie.Title}</Card.Title>
+                        <Card.Body>
+                        <Card.Title >Title: {movie.Title}</Card.Title> 
                         <Card.Text>
                             <small>Released Date: {movie.Year}</small>
-                        </Card.Text>
+                        </Card.Text> 
                         <Card.Text>
                             <small>ImdbID: {movie.imdbID}</small>
                         </Card.Text>
                         
                         
-                    </Card.Body>
+                    </Card.Body> 
                 </Card>)
             })}
         </div>
