@@ -16,12 +16,11 @@ function Movies(props) {
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={movie.Poster} />
                     <Card.Body>
-                        <Card.Title >{movie.Title}</Card.Title>
+                        <Card.Title >Title: {movie.Title}</Card.Title>
                         <Card.Text>
                             <small>Released Date: {movie.Year}</small>
                         </Card.Text>
                         <Card.Text>
-                            <h4>Rating: {movie.imdbRating} / 10</h4>
                             <small>ImdbID: {movie.imdbID}</small>
                         </Card.Text>
                         
